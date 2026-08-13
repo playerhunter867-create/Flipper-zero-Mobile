@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tv = findViewById(R.id.tvOutput);
-        tv.setText("FLIPPER ZERO\nРАБОТАЕТ!");
+        tv.setText("РАБОТАЕТ!");
     }
 }
