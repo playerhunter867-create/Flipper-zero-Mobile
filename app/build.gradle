@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.flipper.control'   // <-- ЭТО ГЛАВНОЕ ДОБАВЛЕНИЕ
     compileSdk 34
 
     defaultConfig {
@@ -23,5 +24,4 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
 }
