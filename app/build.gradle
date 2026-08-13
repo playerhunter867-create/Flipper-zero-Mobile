@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.flipper.control'   // <-- ЭТО ГЛАВНОЕ ДОБАВЛЕНИЕ
+    namespace 'com.flipper.control'   // <-- ЭТО ОБЯЗАТЕЛЬНО!
     compileSdk 34
 
     defaultConfig {
