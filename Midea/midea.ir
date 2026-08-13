@@ -1,0 +1,52 @@
+Filetype: IR signals file
+Version: 1
+# 
+# Универсальный пульт Midea RG57 для кондиционеров AC Electric
+# 
+name: Power_Toggle
+type: parsed
+protocol: Midea
+address: B2 DF 00 00
+command: 00 00 00 00
+#
+name: Mode_Cool
+type: parsed
+protocol: Midea
+address: B2 BF 00 00
+command: 00 00 00 00
+#
+name: Mode_Heat
+type: parsed
+protocol: Midea
+address: B2 3F 00 00
+command: 00 00 00 00
+#
+name: Temp_Up
+type: parsed
+protocol: Midea
+address: B2 9F 00 00
+command: 00 00 00 00
+#
+name: Temp_Down
+type: parsed
+protocol: Midea
+address: B2 5F 00 00
+command: 00 00 00 00
+#
+name: Fan_Auto
+type: parsed
+protocol: Midea
+address: B2 9F 00 00
+command: 00 00 00 00
+#
+name: Fan_High
+type: parsed
+protocol: Midea
+address: B2 BE 00 00
+command: 00 00 00 00
+#
+name: Swing
+type: parsed
+protocol: Midea
+address: B2 0F E0 1F
+command: 00 00 00 00
