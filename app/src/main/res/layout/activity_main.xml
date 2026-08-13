@@ -4,7 +4,74 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#0D0D0D"
-    android:padding="16dp">
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> FLIPPER ZERO // ANDROID"
+        android:textColor="#00FF41"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        android:padding="8dp"
+        android:background="#1A1A1A"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/btnIr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IR"
+            android:background="#00FF41"
+            android:textColor="#0D0D0D"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnNfc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NFC"
+            android:background="#FF9800"
+            android:textColor="#0D0D0D"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnBadUsb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USB"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnSubGhz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GHz"
+            android:background="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvOutput"
@@ -12,31 +79,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textColor="#00FF41"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:typeface="monospace"
-        android:text="> FLIPPER ZERO\n> НАВЕДИ ТЕЛЕФОН НА ТЕХНИКУ" />
-
-    <Button
-        android:id="@+id/btnMiBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="[ ВКЛ. MI BOX ]"
-        android:background="#00FF41"
-        android:textColor="#0D0D0D"
-        android:textSize="18sp"
-        android:typeface="monospace"
-        android:padding="16dp"
-        android:layout_marginBottom="8dp"/>
-
-    <Button
-        android:id="@+id/btnPhilips"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="[ ВКЛ. PHILIPS (ПРОБА) ]"
-        android:background="#333333"
-        android:textColor="#00FF41"
-        android:textSize="18sp"
-        android:typeface="monospace"
-        android:padding="16dp"/>
+        android:padding="8dp"
+        android:text="> SYSTEM READY\n> SELECT MODE"/>
 
 </LinearLayout>
