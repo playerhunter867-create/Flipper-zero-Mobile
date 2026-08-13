@@ -9,9 +9,34 @@
     <TextView
         android:id="@+id/tvOutput"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:textColor="#00FF41"
         android:textSize="16sp"
         android:typeface="monospace"
-        android:text="> FLIPPER ZERO\n> IR READY\n> SELECT SCAN" />
+        android:text="> FLIPPER ZERO\n> НАВЕДИ ТЕЛЕФОН НА ТЕХНИКУ" />
+
+    <Button
+        android:id="@+id/btnMiBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ ВКЛ. MI BOX ]"
+        android:background="#00FF41"
+        android:textColor="#0D0D0D"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnPhilips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[ ВКЛ. PHILIPS (ПРОБА) ]"
+        android:background="#333333"
+        android:textColor="#00FF41"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:padding="16dp"/>
+
 </LinearLayout>
