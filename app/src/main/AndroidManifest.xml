@@ -4,13 +4,10 @@
     <uses-permission android:name="android.permission.TRANSMIT_IR" />
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 
     <application
         android:allowBackup="true"
-        android:label="Flipper Zero"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:label="Flipper Zero">
 
         <activity
             android:name=".MainActivity"
