@@ -1,54 +1,62 @@
 Filetype: IR library
 Version: 1
 
-# === ВАРИАНТ 1 (Самый частый альтернативный китайский адрес 00 FF) ===
-name: V1_ON_SPEED
+# === ПОПЫТКА А: Стандартный протокол NEC (Заводской профиль Leonord/Energy) ===
+name: A_ON_SPEED
 type: parsed
 protocol: NEC
 address: 00 FF 00 00
-command: 02 FD 00 00
+command: 15 EA 00 00
 
-name: V1_OFF
+name: A_OFF
 type: parsed
 protocol: NEC
 address: 00 FF 00 00
-command: 03 FC 00 00
+command: 12 ED 00 00
 
-# === ВАРИАНТ 2 (Популярный адрес для вентиляторов типа Lumme/Leonord) ===
-name: V2_ON_SPEED
+# === ПОПЫТКА Б: Тройной реверсный NEC (Часто срабатывает на клонах Lumme) ===
+name: B_ON_SPEED
 type: parsed
 protocol: NEC
 address: 02 FD 00 00
-command: 03 FC 00 00
+command: 02 FD 00 00
 
-name: V2_OFF
+name: B_OFF
 type: parsed
 protocol: NEC
 address: 02 FD 00 00
-command: 05 FA 00 00
+command: 01 FE 00 00
 
-# === ВАРИАНТ 3 (Смещенная сетка команд) ===
-name: V3_ON_SPEED
+# === ПОПЫТКА В: Редкий "зеркальный" китайский чип (Midea OEM) ===
+name: C_ON_SPEED
 type: parsed
 protocol: NEC
-address: 00 FF 00 00
-command: 40 BF 00 00
-
-name: V3_OFF
-type: parsed
-protocol: NEC
-address: 00 FF 00 00
-command: 45 BA 00 00
-
-# === ВАРИАНТ 4 (Для плат управления со сдвинутым байтом) ===
-name: V4_ON_SPEED
-type: parsed
-protocol: NEC
-address: 40 40 00 00
-command: 0A F5 00 00
-
-name: V4_OFF
-type: parsed
-protocol: NEC
-address: 40 40 00 00
+address: 04 FB 00 00
 command: 02 FD 00 00
+
+name: C_OFF
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 03 FC 00 00
+
+# === ПОПЫТКА Г: Специфический протокол на частоте 38кГц (Профиль Scarlett/Marta) ===
+name: D_ON_SPEED
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 00 FF 00 00
+
+name: D_OFF
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 0C F3 00 00
+
+# === ПОПЫТКА Д: Полностью сырой RAW-сигнал (Если у вас во Flipper стоит кастомная прошивка) ===
+# Этот код эмулирует самый капризный тип китайских плат с задержкой в 9000мс
+name: RAW_ON_SPEED
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 9000 4500 560 560 560 560 560 1690 560 560 560 560 560 560 560 560 560 560 560 1690 560 1690 560 560 560 1690 560 1690 560 1690 560 1690 560 1690 560 560 560 560 560 560 560 1690 560 560 560 560 560 560 560 560 560 1690 560 1690 560 1690 560 560 560 1690 560 1690 560 1690 560 1690 560
