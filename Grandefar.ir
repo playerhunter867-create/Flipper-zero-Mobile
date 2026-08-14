@@ -1,0 +1,44 @@
+Filetype: IR library
+Version: 1
+
+# === ТЕСТ 1: Протокол NEC (Инвертированный адрес) ===
+name: TR_01_ON
+type: parsed
+protocol: NEC
+address: FF 00 00 00
+command: 02 FD 00 00
+
+# === ТЕСТ 2: Протокол Kasei / AUX (Частый гость в OEM) ===
+name: TR_02_ON
+type: parsed
+protocol: NEC
+address: 00 F8 00 00
+command: 04 FB 00 00
+
+# === ТЕСТ 3: Сдвинутый байт Midea (Профиль 2) ===
+name: TR_03_ON
+type: parsed
+protocol: NEC48
+address: 02 7D 00 00
+command: 1D E2 00 00
+
+# === ТЕСТ 4: Протокол RC5 (Европейские контроллеры Philips в некоторых платах) ===
+name: TR_04_ON
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 0C 00 00 00
+
+# === ТЕСТ 5: Протокол Samsung (Да, китайцы иногда копируют их адресацию) ===
+name: TR_05_ON
+type: parsed
+protocol: SAMSUNG
+address: 07 07 00 00
+command: 02 00 00 00
+
+# === ТЕСТ 6: Высокочастотный RAW-импульс (Попытка "пробить" приемник силой) ===
+name: TR_06_RAW
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 8950 4450 600 550 600 1650 600 550 600 550 600 550 600 550 600 550 600 1650 600 1650 600 1650 600 550 600 550 600 550 600 550 600 550 600 550 600 1650 600 1650 600 550 600 550 600 1650 600 1650 600 1650 600 1650 600 550 600 550 600 1650 600 1650 600 550 600 550 600 550 600 550 600
