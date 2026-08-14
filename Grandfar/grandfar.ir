@@ -1,0 +1,30 @@
+Filetype: IR library
+Version: 1
+
+# Кнопка включения и регулировки скорости
+name: ON_SPEED
+type: parsed
+protocol: NEC
+address: 00 DF 00 00
+command: 02 FD 00 00
+
+# Кнопка выключения
+name: OFF
+type: parsed
+protocol: NEC
+address: 00 DF 00 00
+command: 03 FC 00 00
+
+# Кнопка переключения режимов (обычный/ночной/бриз)
+name: MODE
+type: parsed
+protocol: NEC
+address: 00 DF 00 00
+command: 04 FB 00 00
+
+# Кнопка настройки таймера автовыключения
+name: TIMER
+type: parsed
+protocol: NEC
+address: 00 DF 00 00
+command: 05 FA 00 00
