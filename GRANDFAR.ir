@@ -1,0 +1,30 @@
+Filetype: IR library
+Version: 1
+
+# Кнопка включения и переключения скоростей
+name: ON_SPEED
+type: parsed
+protocol: NEC48
+address: 02 7D 02 00
+command: 1D E2 00 00
+
+# Кнопка выключения
+name: OFF
+type: parsed
+protocol: NEC48
+address: 02 7D 02 00
+command: 1E E1 00 00
+
+# Кнопка изменения режимов (Бриз / Ночной)
+name: MODE
+type: parsed
+protocol: NEC48
+address: 02 7D 02 00
+command: 1C E3 00 00
+
+# Кнопка таймера отключения
+name: TIMER
+type: parsed
+protocol: NEC48
+address: 02 7D 02 00
+command: 1B E4 00 00
