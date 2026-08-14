@@ -1,30 +1,54 @@
 Filetype: IR library
 Version: 1
 
-# Кнопка включения и регулировки скорости
-name: ON_SPEED
+# === ВАРИАНТ 1 (Самый частый альтернативный китайский адрес 00 FF) ===
+name: V1_ON_SPEED
 type: parsed
 protocol: NEC
-address: 00 DF 00 00
+address: 00 FF 00 00
 command: 02 FD 00 00
 
-# Кнопка выключения
-name: OFF
+name: V1_OFF
 type: parsed
 protocol: NEC
-address: 00 DF 00 00
+address: 00 FF 00 00
 command: 03 FC 00 00
 
-# Кнопка переключения режимов (обычный/ночной/бриз)
-name: MODE
+# === ВАРИАНТ 2 (Популярный адрес для вентиляторов типа Lumme/Leonord) ===
+name: V2_ON_SPEED
 type: parsed
 protocol: NEC
-address: 00 DF 00 00
-command: 04 FB 00 00
+address: 02 FD 00 00
+command: 03 FC 00 00
 
-# Кнопка настройки таймера автовыключения
-name: TIMER
+name: V2_OFF
 type: parsed
 protocol: NEC
-address: 00 DF 00 00
+address: 02 FD 00 00
 command: 05 FA 00 00
+
+# === ВАРИАНТ 3 (Смещенная сетка команд) ===
+name: V3_ON_SPEED
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 40 BF 00 00
+
+name: V3_OFF
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 45 BA 00 00
+
+# === ВАРИАНТ 4 (Для плат управления со сдвинутым байтом) ===
+name: V4_ON_SPEED
+type: parsed
+protocol: NEC
+address: 40 40 00 00
+command: 0A F5 00 00
+
+name: V4_OFF
+type: parsed
+protocol: NEC
+address: 40 40 00 00
+command: 02 FD 00 00
