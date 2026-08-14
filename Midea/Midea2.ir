@@ -1,133 +1,47 @@
 Filetype: IR signals file
 Version: 1
 # 
-# МАКСИМАЛЬНЫЙ КАСТОМНЫЙ ПУЛЬТ ДЛЯ AC ELECTRIC / MIDEA RG57
-# Добавлены все возможные режимы, таймеры и тонкие настройки
+# ИСПРАВЛЕННЫЙ RAW-ПУЛЬТ MIDEA ДЛЯ ТЕЛЕФОНОВ ANDROID
 # 
 
-# ================= ПИТАНИЕ И ТУРБО =================
 name: Power_Toggle
-type: parsed
-protocol: Midea
-address: B2 DF 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 550 550 550 550 550 550 550 550 550 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 5000
 
-name: Turbo_Mode
-type: parsed
-protocol: Midea
-address: B2 1F E0 1F
-command: 00 00 00 00
-
-# ================= РЕЖИМ ОХЛАЖДЕНИЯ (COOL) =================
 name: Cool_26_Auto
-type: parsed
-protocol: Midea
-address: B2 BF 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 550 550 550 550 550 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 5000
 
-name: Cool_22_High
-type: parsed
-protocol: Midea
-address: B2 BD 00 00
-command: 00 00 00 00
-
-name: Cool_18_Max
-type: parsed
-protocol: Midea
-address: B2 B9 00 00
-command: 00 00 00 00
-
-# ================= РЕЖИМ ОБОГРЕВА (HEAT) =================
 name: Heat_25_Auto
-type: parsed
-protocol: Midea
-address: B2 3F 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 1650 550 1650 550 550 550 550 550 550 550 550 550 550 550 550 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 5000
 
-name: Heat_30_Max
-type: parsed
-protocol: Midea
-address: B2 3B 00 00
-command: 00 00 00 00
-
-# ================= ИЗМЕНЕНИЕ ТЕМПЕРАТУРЫ =================
 name: Temp_UP
-type: parsed
-protocol: Midea
-address: B2 9F 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 550 550 550 550 550 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 5000
 
-name: Temp_DOWN
-type: parsed
-protocol: Midea
-address: B2 5F 00 00
-command: 00 00 00 00
-
-# ================= СКОРОСТЬ ВЕНТИЛЯТОРА (FAN) =================
 name: Fan_Auto
-type: parsed
-protocol: Midea
-address: B2 9F 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 550 550 550 550 550 550 550 550 1650 550 550 550 550 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 5000
 
-name: Fan_Low
-type: parsed
-protocol: Midea
-address: B2 BA 00 00
-command: 00 00 00 00
-
-name: Fan_Medium
-type: parsed
-protocol: Midea
-address: B2 BC 00 00
-command: 00 00 00 00
-
-name: Fan_High
-type: parsed
-protocol: Midea
-address: B2 BE 00 00
-command: 00 00 00 00
-
-# ================= НАПРАВЛЕНИЕ ВОЗДУХА (SWING) =================
 name: Swing_Auto
-type: parsed
-protocol: Midea
-address: B2 0F E0 1F
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 1650 550 550 550 550 550 550 550 1650 550 550 550 550 550 550 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 550 550 1650 550 1650 550 1650 550 550 550 550 550 5000
 
-name: Direct_Step
-type: parsed
-protocol: Midea
-address: B2 0F C0 3F
-command: 00 00 00 00
-
-# ================= ДОПОЛНИТЕЛЬНЫЕ ФУНКЦИИ =================
 name: Sleep_Night
-type: parsed
-protocol: Midea
-address: B2 DF 20 DF
-command: 00 00 00 00
-
-name: LED_Display_Toggle
-type: parsed
-protocol: Midea
-address: B5 AF 55 AA
-command: 00 00 00 00
-
-name: Shortcut_Fav
-type: parsed
-protocol: Midea
-address: B2 DF 40 BF
-command: 00 00 00 00
-
-name: Timer_ON_1h
-type: parsed
-protocol: Midea
-address: B2 7F 00 00
-command: 00 00 00 00
-
-name: Timer_OFF_1h
-type: parsed
-protocol: Midea
-address: B2 6F 00 00
-command: 00 00 00 00
+type: raw
+frequency: 38000
+duty_cycle: 0.33
+data: 4400 4400 550 1650 550 550 550 1650 550 550 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 1650 550 550 550 1650 550 1650 550 550 550 550 550 550 550 550 550 1650 550 550 550 1650 550 1650 550 1650 550 1650 550 1650 550 1650 550 550 550 1650 550 5000
