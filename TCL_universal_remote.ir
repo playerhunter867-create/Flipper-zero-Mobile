@@ -1,0 +1,86 @@
+Filetype: Flipper IR signals file
+Version: 1
+
+# Кнопка включения - Вариант 1 (NEC)
+name: POWER_1
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 12 ED 00 00
+
+# Кнопка включения - Вариант 2 (NEC)
+name: POWER_2
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: F8 07 00 00
+
+# Кнопка включения - Вариант 3 (NECext)
+name: POWER_3
+type: parsed
+protocol: NECext
+address: 01 FE 00 00
+command: 48 B7 00 00
+
+# Громкость + (Основной)
+name: VOL_UP
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 1A EC 00 00
+
+# Громкость - (Основной)
+name: VOL_DOWN
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 1E E1 00 00
+
+# Отключение звука
+name: MUTE
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 10 EF 00 00
+
+# Выбор источника (Вход)
+name: SOURCE
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 0F E0 00 00
+
+# Стрелка Вверх
+name: UP
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 03 FC 00 00
+
+# Стрелка Вниз
+name: DOWN
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 0B F4 00 00
+
+# Кнопка ОК
+name: OK
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 15 EA 00 00
+
+# Кнопка Назад
+name: BACK
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 1B E4 00 00
+
+# Меню
+name: MENU
+type: parsed
+protocol: NEC
+address: 40 BF 00 00
+command: 02 FD 00 00
