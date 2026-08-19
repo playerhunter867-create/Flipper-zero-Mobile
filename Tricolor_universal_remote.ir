@@ -1,0 +1,133 @@
+Filetype: Flipper IR signals file
+Version: 1
+
+# === ОСНОВНАЯ СЕРИЯ ПРИЕМНИКОВ TRICOLOR (GENERAL SATELLITE / GS) ===
+
+# Кнопка включения приставки
+name: POWER
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 08 F7 00 00
+
+# Отключение звука
+name: MUTE
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 48 B7 00 00
+
+# Переключение каналов (Вверх)
+name: CH_UP
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 28 D7 00 00
+
+# Переключение каналов (Вниз)
+name: CH_DOWN
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: A8 57 00 00
+
+# Громкость +
+name: VOL_UP
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 68 97 00 00
+
+# Громкость -
+name: VOL_DOWN
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: E8 17 00 00
+
+# Кнопка ОК / Список каналов
+name: OK
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: D8 27 00 00
+
+# Навигация: Вверх
+name: UP
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 18 E7 00 00
+
+# Навигация: Вниз
+name: DOWN
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 98 67 00 00
+
+# Навигация: Влево
+name: LEFT
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 58 A7 00 00
+
+# Навигация: Вправо
+name: RIGHT
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 38 C7 00 00
+
+# Выход / Назад
+name: EXIT
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 50 AF 00 00
+
+# Главное Меню
+name: MENU
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 00 FF 00 00
+
+# Телегид (Программа передач)
+name: EPG
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: C8 37 00 00
+
+# Информация о канале (кнопка 'i')
+name: INFO
+type: parsed
+protocol: NEC
+address: 04 FB 00 00
+command: 88 77 00 00
+
+
+# === АЛЬТЕРНАТИВНЫЙ ВАРЬЯНТ (ДЛЯ РЕДКИХ ПРИСТАВОК СЕРИИ DTS) ===
+
+# Включение DTS
+name: DTS_POWER
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 45 BA 00 00
+
+# Громкость + (DTS)
+name: DTS_VOL_UP
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 15 EA 00 00
+
+# Громкость - (DTS)
+name: DTS_VOL_DOWN
+type: parsed
+protocol: NEC
+address: 00 FF 00 00
+command: 16 E9 00 00
