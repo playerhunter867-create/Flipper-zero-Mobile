@@ -1,0 +1,25 @@
+import android.content.Context;
+import android.hardware.ConsumerIrManager;
+
+// Проверяем наличие ИК-порта и отправляем сигнал
+ConsumerIrManager irManager = (ConsumerIrManager) getSystemService(Context.CONSUMER_IR_SERVICE);
+
+if (irManager != null && irManager.hasIrEmitter()) {
+    int frequency = 38000; // Частота для TCL
+    
+    // Пример паттерна для кнопки POWER (Включение/Выключение) TCL
+    int[] powerPattern = {
+        9000, 4500, // Стартовый импульс и пауза (NEC протокол)
+        560, 560, 560, 560, 560, 1690, 560, 560, // Данные...
+        560, 560, 560, 1690, 560, 1690, 560, 560,
+        560, 1690, 560, 1690, 560, 560, 560, 1690,
+        560, 1690, 560, 560, 560, 560, 560, 1690,
+        560, 560, 560, 560, 560, 560, 560, 1690,
+        560, 1690, 560, 560, 560, 1690, 560, 560,
+        560, 1690, 560, 1690, 560, 1690, 560, 560,
+        560, 560, 560, 1690, 560, 560, 560, 1690,
+        560
+    };
+    
+    irManager.transmit(frequency, powerPattern);
+}
